@@ -1,8 +1,8 @@
 Hodnocení uživatelů
 =================
 
-This is a simple, skeleton application using the [Nette](https://nette.org). This is meant to
-be used as a starting point for your new projects.
+Hodnotící systém bude moc být použitelný na různé druhy hodnocení. Například hodnocení filmů, aut, hercu, modelek a mnoho
+dalších entit. Základní by mělo být super UX/UI prostředí pro uživatele. a veškeré možnosti statistik. 
 
 [Nette](https://nette.org) is a popular tool for PHP web development.
 It is designed to be the most usable and friendliest as possible. It focuses
