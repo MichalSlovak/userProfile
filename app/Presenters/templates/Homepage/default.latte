@@ -1,6 +1,6 @@
 {block content}
     <h1 n:block="title">Můj blogg</h1>
-
+    <a n:href="User:default">← UserDefault</a>
     {foreach $posts as $post}
         <div class="post">
             <div class="date">{$post->created_at|date:'F j, Y'}</div>
@@ -10,4 +10,5 @@
             <div>{$post->content}</div>
         </div>
     {/foreach}
+
 {/block}

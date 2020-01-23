@@ -7,10 +7,13 @@ namespace App\Presenters;
 use Nette;
 
 
-final class HomepagePresenter extends Nette\Application\UI\Presenter
+final class UserPresenter extends Nette\Application\UI\Presenter
 {
     /** @var Nette\Database\Context */
     private $database;
+
+    /** @var Nette\Security\User */
+    public $user;
 
     public function __construct(Nette\Database\Context $database)
     {
@@ -23,5 +26,10 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
             ->order('created_at DESC')
             ->limit(5);
     }
-
+/*
+    public function renderDefault($user, $username = 1, $password = 1 ): void
+    {
+        $user->login($username, $password);
+    }
+*/
 }

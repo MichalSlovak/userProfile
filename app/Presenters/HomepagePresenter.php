@@ -23,5 +23,4 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
             ->order('created_at DESC')
             ->limit(5);
     }
-
 }
