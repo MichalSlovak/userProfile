@@ -1,14 +1,9 @@
+{var $robots = noindex}
 
-Ahoj
-{*/*
 {block content}
-    <h1 n:block="title">Můj uživatel</h1>
 
-    {foreach $userData as $user}
-        <div class="post">
-            <h2>{$user->isLoggedIn() ? 'ano' : 'ne'}</h2>
-        </div>
-    {/foreach}
-{/block}
+<h1 n:block="title">Sign in</h1>
 
-*}
+{control signInForm}
+
+<p>Default username is <i>demo</i>, with password <i>xxx</i></p>
